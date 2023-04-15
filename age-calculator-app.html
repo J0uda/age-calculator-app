@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="an">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+        <link 
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png" 
+        />
+        <title>Frontend Mentor || Age calculator app</title>
+        <link rel="stylesheet" type="text/css" href="age-calculator-app.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <form id="item-form">
+                <div class="form-control">
+                    <div class="input-wrap"> 
+                        <label for="day" class="label">day</label>
+                        <input 
+                            type="text"
+                            class="form-input"
+                            id="day-input"
+                            name="day"
+                            placeholder="DD"
+                        />
+                        <div class="error-handling"></div>
+                    </div>
+                    <div class='input-wrap'> 
+                        <label for="month" class="label">month</label>
+                        <input 
+                            type="text"
+                            class="form-input"
+                            id="month-input"
+                            name="month"
+                            placeholder="MM"
+                        />
+                        <div class="error-handling"></div>
+                    </div>
+                    <div class="input-wrap"> 
+                        <label for="year" class="label">year</label>
+                        <input 
+                            type="text"
+                            class="form-input"
+                            id="year-input"
+                            name="year"
+                            placeholder="YYYY"
+                        />
+                        <div class="error-handling"></div>
+                    </div>
+                </div>
+                <div class="button-control">
+                    <hr /> 
+                    <button type="submit" class="btn">
+                        <img src="./assets/images/icon-arrow.svg" alt="submit" />
+                    </button>
+                </div>
+            </form>
+
+            <div class="preview">
+                <p><span class="year">--</span>years</p>
+                <p><span class="month">--</span>months</p>
+                <p><span class="day">--</span>days</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
